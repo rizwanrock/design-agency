@@ -1,0 +1,141 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+.logo {
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 5px 8px 10px 3px rgba(0,0,0,0.5);
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  
+  text-align: left;
+  color: midnightblue;
+  padding: 2px;
+  clear: both;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 5px 8px 10px 3px rgba(0,0,0,0.5);
+  border-right: 10px;
+}
+
+span{
+  padding: 3px;
+  color: #191970;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 5px 8px 10px 3px rgba(0,0,0,0.5);
+}
+
+#line {
+  margin-bottom: 20px;
+  color: #000;
+  width: 50%;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 5px 8px 10px 3px rgba(0,0,0,0.5);
+}
+
+.card img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+
+}
+
+.tile-image{ 
+  float: left;
+  border-radius: 10px;
+}
+
+
+h2{
+  color: midnightblue;
+}
+
+@media (max-width: 680px){
+
+  h1{
+    text-align: center;
+  }
+  .card img{ 
+    display: inline;
+  }
+
+  .card.left {
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 8px 10px 3px rgba(0,0,0,0.5);
+  }
+
+  .card.right {
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 8px 10px 3px rgba(0,0,0,0.5);
+  }
+}   
+
+@media (min-width: 681px) and (max-width: 1072px){
+  
+  .card{
+    width: 45%;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 8px 10px 3px rgba(0,0,0,0.5);
+  }
+
+  .left{
+    float: left;
+  }
+
+  .right{
+    float: right;
+  }
+
+  .card img{
+    width: 203px;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 1073px){
+  .card{
+    width: 45%;
+    display: inline-block;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 8px 10px 3px rgba(0,0,0,0.5);
+  }
+
+  .left{
+    float: left;
+  }
+
+  .right{
+    float: right;
+  }
+
+  .card img{
+    float: left;
+    margin-right: 50px;
+    width: 203px;
+  }
+  
+  h2.card-title{
+    display: inline;
+  }
+
+  div.class-title{
+    float: right;
+  }
+
+  div.card-text{
+    float: right;
+  }
+}
